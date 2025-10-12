@@ -81,6 +81,17 @@ int main(){
     a1.get();
     cout << a2.get() << a3.get() << endl;
 
+    bool done=false;
+    int ii=0;
+    for(int i = 0; i<10 && done==false; i++){
+        ++ii;
+        cout << "i is: " << i << endl;
+        cout << "ii is: " << ii << endl;
+        if(ii==5){
+            done=true;
+        }
+    }
+
 
 
     

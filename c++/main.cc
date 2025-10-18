@@ -66,7 +66,7 @@ int main() {
     //std::strings, they are treated like vectors and most vector features work on them
     string str = "wubba lubba dub dub";
     cout << str.length() << " | " << str.size() << endl;
-    string substr = str.substr(0, 5);
+    string substr = str.substr(0, 1);
     cout << substr << endl;
 
     cout << "DATA TYPES" << endl;
@@ -78,8 +78,6 @@ int main() {
     //splicing exists, it's a headache
     for(auto &c:chain){
         cout << c << " | ";
-    }float sum(){
-        return sx + sy;
     }
     cout << " " << endl;
     //iterators, btw find is cracked, works on all stl

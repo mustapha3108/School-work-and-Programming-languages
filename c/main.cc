@@ -78,7 +78,8 @@ int main() {
     //splicing exists, it's a headache
     for(auto &c:chain){
         cout << c << " | ";
-    }float sum(){
+    }
+    float sum(){
         return sx + sy;
     }
     cout << " " << endl;

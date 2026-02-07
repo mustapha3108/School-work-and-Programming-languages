@@ -9,34 +9,18 @@ typedef enum { PROC_FATHER, PROC_HOUR, PROC_MIN, PROC_SEC } role_t;
 
 pid_t pid_h, pid_m, pid_s, pid_f;
 int h = 0;
-m = 0;
-s = 0;
+int m = 58;
+int s = 55;
 bool link_ready = false;
 role_t role = PROC_FATHER;
 
-void handler_father(int sig, siginfo_t *info, void *ctx) {
-    int val = info->si_value.sival_int;
-    if (info->si_pid == pid_s) {
-        s = val;
-        if (s < 60)
-            printf("s %02d\n", s);
-    } else if (info->si_pid == pid_m) {
-        m = val;
-        if (m < 60)
-            printf("m %02d\n",m);
-    } else if (info->si_pid == pid_h) {
-        h = val;
-        printf("heurs: %02d\n", h);
-    }
-    fflush(stdout);
-}
 
 void handler_hour(int sig, siginfo_t *info, void *ctx) {
-    if (info->si_pid == pid_m) link_ready = true;
+    if (info->si_pid == pid_m) /*link_ready = true*/;
 }
 
 void handler_min(int sig, siginfo_t *info, void *ctx) {
-    if (info->si_pid == pid_s) link_ready = true;
+    if (info->si_pid == pid_s) /*link_ready = true*/;
     if (info->si_pid == pid_f) pid_h = info->si_value.sival_int;
 }
 
@@ -54,12 +38,12 @@ void setup_handler(void (*fn)(int, siginfo_t *, void *)) {
 
 void run_hour() {
     setup_handler(handler_hour);
-    while (!link_ready) pause();
+    //while (!link_ready) pause();
     while (1) {
         pause();
         h++;
-        union sigval v = {.sival_int = h};
-        sigqueue(pid_f, SIGUSR1, v);
+        printf("houres: %d\n", h);
+        fflush(stdout);
     }
 }
 
@@ -69,12 +53,13 @@ void run_min() {
     while (1) {
         pause();
         m++;
-        union sigval v = {.sival_int = m};
-        sigqueue(pid_f, SIGUSR1, v);
         if (m == 60) {
             m = 0;
             union sigval zero = {.sival_int = 0};
             sigqueue(pid_h, SIGUSR1, zero);
+        }else{
+            printf("minutes: %d\n", m);
+            fflush(stdout);
         }
     }
 }
@@ -85,12 +70,16 @@ void run_sec() {
     while (1) {
         sleep(1);
         s++;
+
         union sigval v = {.sival_int = s};
         sigqueue(pid_f, SIGUSR1, v);
         if (s == 60) {
             s = 0;
             union sigval zero = {.sival_int = 0};
             sigqueue(pid_m, SIGUSR1, zero);
+        }else{
+            printf("second: %d\n", s);
+            fflush(stdout);
         }
     }
 }
@@ -121,9 +110,6 @@ int main(void) {
     sigqueue(pid_s, SIGUSR1, v);
     v.sival_int = pid_h;
     sigqueue(pid_m, SIGUSR1, v);
-
-    setup_handler(handler_father);
-    fflush(stdout);
 
     while (1) pause();
 }

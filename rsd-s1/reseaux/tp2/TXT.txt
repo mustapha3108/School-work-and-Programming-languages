@@ -41,4 +41,31 @@ ospf:
 	
 	
 	
+	--------------------------
+	config if# ip ospf hello-interval *NB
+	dead-interval
+	x*(x-1)/2 +1
+	2*(x-1=
+	dr bdr dro
+	
+	IP OSPF priority X
+	
+	router-id *id(ip format)
+	
+	interface loopback x
+	IP ADDRESS @IP_MASK
+	exit
+	
+	router osp
+	
+	
+	in router(id(manual) > logique > physyque) then in election it doesn't matter, bigger wins
+	
+	clear id ospf process
+	
+	show ip ospf neighbor
+	
+	
+	
+	
 	

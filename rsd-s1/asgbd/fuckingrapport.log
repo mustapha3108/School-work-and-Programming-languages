@@ -1,0 +1,507 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.11.17)  26 DEC 2025 16:06
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**fuckingrapport.tex
+(./fuckingrapport.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count193
+\float@exts=\toks17
+\float@box=\box50
+\@float@everytoks=\toks18
+\@floatcapt=\box51
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen141
+\lightrulewidth=\dimen142
+\cmidrulewidth=\dimen143
+\belowrulesep=\dimen144
+\belowbottomsep=\dimen145
+\aboverulesep=\dimen146
+\abovetopsep=\dimen147
+\cmidrulesep=\dimen148
+\cmidrulekern=\dimen149
+\defaultaddspace=\dimen150
+\@cmidla=\count194
+\@cmidlb=\count195
+\@aboverulesep=\dimen151
+\@belowrulesep=\dimen152
+\@thisruleclass=\count196
+\@lastruleclass=\count197
+\@thisrulewidth=\dimen153
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count198
+\Gm@cntv=\count199
+\c@Gm@tempcnt=\count266
+\Gm@bindingoffset=\dimen154
+\Gm@wd@mp=\dimen155
+\Gm@odd@mp=\dimen156
+\Gm@even@mp=\dimen157
+\Gm@layoutwidth=\dimen158
+\Gm@layoutheight=\dimen159
+\Gm@layouthoffset=\dimen160
+\Gm@layoutvoffset=\dimen161
+\Gm@dimlist=\toks19
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count267
+\l__pdf_internal_box=\box52
+)
+(./fuckingrapport.aux)
+\openout1 = `fuckingrapport.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count268
+\scratchdimen=\dimen162
+\scratchbox=\box53
+\nofMPsegments=\count269
+\nofMParguments=\count270
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count271
+\MPscratchDim=\dimen163
+\MPnumerator=\count272
+\makeMPintoPDFobject=\count273
+\everyMPtoPDFconversion=\toks21
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (10.79361pt too wide) in paragraph at lines 47--47
+[]\OT1/cmr/bx/n/17.28 i hate this fuck-ing sub-ject, fuck-ing whale of a teache
+r
+ []
+
+</home/crow/Pictures/Screenshots/1.png, id=9, 943.525pt x 75.28125pt>
+File: /home/crow/Pictures/Screenshots/1.png Graphic file (type png)
+<use /home/crow/Pictures/Screenshots/1.png>
+Package pdftex.def Info: /home/crow/Pictures/Screenshots/1.png  used on input l
+ine 55.
+(pdftex.def)             Requested size: 409.71692pt x 32.69078pt.
+
+Overfull \hbox (25.05325pt too wide) in paragraph at lines 52--56
+[]\OT1/cmr/m/n/12 create ta-blespace bel-mouloud[]tbs datafile '/opt/oracle/ora
+data/XE/belmouloud[]tbs.dbf'
+ []
+
+</home/crow/Pictures/Screenshots/2.png, id=11, 1080.035pt x 87.32625pt>
+File: /home/crow/Pictures/Screenshots/2.png Graphic file (type png)
+<use /home/crow/Pictures/Screenshots/2.png>
+Package pdftex.def Info: /home/crow/Pictures/Screenshots/2.png  used on input l
+ine 61.
+(pdftex.def)             Requested size: 409.71692pt x 33.12701pt.
+
+Overfull \hbox (12.74075pt too wide) in paragraph at lines 58--62
+[]\OT1/cmr/m/n/12 create tem-po-rary ta-blespace bel-mouloud2[]temptbs temp-fil
+e '/opt/oracle/oradata/XE/ 
+ []
+
+</home/crow/Pictures/Screenshots/3.png, id=12, 1080.035pt x 88.33pt>
+File: /home/crow/Pictures/Screenshots/3.png Graphic file (type png)
+<use /home/crow/Pictures/Screenshots/3.png>
+Package pdftex.def Info: /home/crow/Pictures/Screenshots/3.png  used on input l
+ine 68.
+(pdftex.def)             Requested size: 409.71692pt x 33.50778pt.
+
+Overfull \hbox (20.27344pt too wide) in paragraph at lines 65--69
+[]\OT1/cmr/m/n/12 create user tp1[]belmouloud iden-ti-fied by mus-mus3108 de-fa
+ult ta-blespace bel-mouloud[]tbs
+ []
+
+</home/crow/Pictures/Screenshots/4.png, id=13, 1080.035pt x 88.33pt>
+File: /home/crow/Pictures/Screenshots/4.png Graphic file (type png)
+<use /home/crow/Pictures/Screenshots/4.png>
+Package pdftex.def Info: /home/crow/Pictures/Screenshots/4.png  used on input l
+ine 75.
+(pdftex.def)             Requested size: 409.71692pt x 33.50778pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+
+ []
+
+
+Overfull \hbox (9.22855pt too wide) in paragraph at lines 89--90
+[]\OT1/cmr/m/n/12 order[]comments (id pri-mary key, prod-uct[]id for-eign key, 
+user[]id for-eign key,comments) 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--99
+
+ []
+
+[1 </home/crow/Pictures/Screenshots/1.png> </home/crow/Pictures/Screenshots/2.p
+ng> </home/crow/Pictures/Screenshots/3.png> </home/crow/Pictures/Screenshots/4.
+png>]
+Underfull \hbox (badness 10000) in paragraph at lines 100--105
+
+ []
+
+
+Overfull \hbox (2.09799pt too wide) in paragraph at lines 106--117
+\OT1/cmr/m/n/12 BER, price NUM-BER, cat-e-gory VAR-CHAR2(10), CON-STRAINT pk[]p
+roducts PRI-
+ []
+
+
+Overfull \hbox (6.08pt too wide) in paragraph at lines 106--117
+\OT1/cmr/m/n/12 100), CON-STRAINT chk[]category CHECK (cat-e-gory IN ('tshirt',
+ 'hoodie', 'jacket')),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--117
+
+ []
+
+
+Overfull \hbox (3.1892pt too wide) in paragraph at lines 118--125
+[]\OT1/cmr/m/n/12 CREATE TA-BLE or-ders ( prod-uct[]id NUM-BER, user[]id NUM-BE
+R, CON-STRAINT
+ []
+
+
+Overfull \hbox (31.43575pt too wide) in paragraph at lines 118--125
+\OT1/cmr/m/n/12 FOR-EIGN KEY (prod-uct[]id) REF-ER-ENCES prod-ucts (id), CON-ST
+RAINT fk[]order[]user
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--125
+
+ []
+
+
+Overfull \hbox (5.84459pt too wide) in paragraph at lines 126--135
+\OT1/cmr/m/n/12 NUM-BER, com-ment-txt VAR-CHAR2(100), CON-STRAINT pk[]order[]co
+mments PRI-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--135
+
+ []
+
+</home/crow/Pictures/Screenshots/5.png, id=21, 1050.92625pt x 541.02126pt>
+File: /home/crow/Pictures/Screenshots/5.png Graphic file (type png)
+<use /home/crow/Pictures/Screenshots/5.png>
+Package pdftex.def Info: /home/crow/Pictures/Screenshots/5.png  used on input l
+ine 148.
+(pdftex.def)             Requested size: 409.71692pt x 210.92314pt.
+
+Overfull \hbox (14.92194pt too wide) in paragraph at lines 136--149
+\OT1/cmr/m/n/12 fk[]review[]seller FOR-EIGN KEY (seller[]id) REF-ER-ENCES sell-
+ers (id), CON-STRAINT
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--149
+
+ []
+
+</home/crow/Pictures/Screenshots/6.png, id=22, 655.44875pt x 188.705pt>
+File: /home/crow/Pictures/Screenshots/6.png Graphic file (type png)
+<use /home/crow/Pictures/Screenshots/6.png>
+Package pdftex.def Info: /home/crow/Pictures/Screenshots/6.png  used on input l
+ine 152.
+(pdftex.def)             Requested size: 409.71692pt x 117.9576pt.
+</home/crow/Pictures/Screenshots/7.png, id=23, 665.48625pt x 468.75125pt>
+File: /home/crow/Pictures/Screenshots/7.png Graphic file (type png)
+<use /home/crow/Pictures/Screenshots/7.png>
+Package pdftex.def Info: /home/crow/Pictures/Screenshots/7.png  used on input l
+ine 156.
+(pdftex.def)             Requested size: 409.71692pt x 288.59859pt.
+[2 </home/crow/Pictures/Screenshots/5.png>]
+</home/crow/Pictures/Screenshots/8.png, id=28, 665.48625pt x 203.76125pt>
+File: /home/crow/Pictures/Screenshots/8.png Graphic file (type png)
+<use /home/crow/Pictures/Screenshots/8.png>
+Package pdftex.def Info: /home/crow/Pictures/Screenshots/8.png  used on input l
+ine 163.
+(pdftex.def)             Requested size: 409.71692pt x 125.45078pt.
+</home/crow/Pictures/Screenshots/9.png, id=29, 665.48625pt x 376.40625pt>
+File: /home/crow/Pictures/Screenshots/9.png Graphic file (type png)
+<use /home/crow/Pictures/Screenshots/9.png>
+Package pdftex.def Info: /home/crow/Pictures/Screenshots/9.png  used on input l
+ine 170.
+(pdftex.def)             Requested size: 409.71692pt x 231.74405pt.
+ [3 </home/crow/Pictures/Screenshots/6.png> </home/crow/Pictures/Screenshots/7.
+png> </home/crow/Pictures/Screenshots/8.png>]
+</home/crow/Pictures/Screenshots/10.png, id=36, 665.48625pt x 209.78375pt>
+File: /home/crow/Pictures/Screenshots/10.png Graphic file (type png)
+<use /home/crow/Pictures/Screenshots/10.png>
+Package pdftex.def Info: /home/crow/Pictures/Screenshots/10.png  used on input 
+line 176.
+(pdftex.def)             Requested size: 409.71692pt x 129.15868pt.
+</home/crow/Pictures/Screenshots/11.png, id=37, 665.48625pt x 312.16624pt>
+File: /home/crow/Pictures/Screenshots/11.png Graphic file (type png)
+<use /home/crow/Pictures/Screenshots/11.png>
+Package pdftex.def Info: /home/crow/Pictures/Screenshots/11.png  used on input 
+line 182.
+(pdftex.def)             Requested size: 409.71692pt x 192.19307pt.
+</home/crow/Pictures/Screenshots/12.png, id=38, 665.48625pt x 297.11pt>
+File: /home/crow/Pictures/Screenshots/12.png Graphic file (type png)
+<use /home/crow/Pictures/Screenshots/12.png>
+Package pdftex.def Info: /home/crow/Pictures/Screenshots/12.png  used on input 
+line 188.
+(pdftex.def)             Requested size: 409.71692pt x 182.9233pt.
+ [4 </home/crow/Pictures/Screenshots/9.png> </home/crow/Pictures/Screenshots/10
+.png> </home/crow/Pictures/Screenshots/11.png>]
+</home/crow/Pictures/Screenshots/13.png, id=45, 834.11626pt x 159.59625pt>
+File: /home/crow/Pictures/Screenshots/13.png Graphic file (type png)
+<use /home/crow/Pictures/Screenshots/13.png>
+Package pdftex.def Info: /home/crow/Pictures/Screenshots/13.png  used on input 
+line 194.
+(pdftex.def)             Requested size: 409.71692pt x 78.39522pt.
+</home/crow/Pictures/Screenshots/14.png, id=46, 569.12625pt x 141.52875pt>
+File: /home/crow/Pictures/Screenshots/14.png Graphic file (type png)
+<use /home/crow/Pictures/Screenshots/14.png>
+Package pdftex.def Info: /home/crow/Pictures/Screenshots/14.png  used on input 
+line 200.
+(pdftex.def)             Requested size: 409.71692pt x 101.89197pt.
+</home/crow/Pictures/Screenshots/15.png, id=47, 667.49374pt x 328.22626pt>
+File: /home/crow/Pictures/Screenshots/15.png Graphic file (type png)
+<use /home/crow/Pictures/Screenshots/15.png>
+Package pdftex.def Info: /home/crow/Pictures/Screenshots/15.png  used on input 
+line 220.
+(pdftex.def)             Requested size: 409.71692pt x 201.47481pt.
+
+Overfull \hbox (5.74461pt too wide) in paragraph at lines 203--221
+\OT1/cmr/m/n/12 :NEW.discounted != vdis-count THEN RAISE[]APPLICATION[]ERROR(-2
+0001, 'Or-
+ []
+
+[5 </home/crow/Pictures/Screenshots/12.png> </home/crow/Pictures/Screenshots/13
+.png> </home/crow/Pictures/Screenshots/14.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 223--230
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--238
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--246
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--254
+
+ []
+
+[6 </home/crow/Pictures/Screenshots/15.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 255--262
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--270
+
+ []
+
+</home/crow/Pictures/Screenshots/16.png, id=59, 736.7525pt x 176.66pt>
+File: /home/crow/Pictures/Screenshots/16.png Graphic file (type png)
+<use /home/crow/Pictures/Screenshots/16.png>
+Package pdftex.def Info: /home/crow/Pictures/Screenshots/16.png  used on input 
+line 275.
+(pdftex.def)             Requested size: 409.71692pt x 98.24153pt.
+[7 </home/crow/Pictures/Screenshots/16.png>]
+</home/crow/Pictures/Screenshots/17.png, id=64, 736.7525pt x 176.66pt>
+File: /home/crow/Pictures/Screenshots/17.png Graphic file (type png)
+<use /home/crow/Pictures/Screenshots/17.png>
+Package pdftex.def Info: /home/crow/Pictures/Screenshots/17.png  used on input 
+line 283.
+(pdftex.def)             Requested size: 409.71692pt x 98.24153pt.
+</home/crow/Pictures/Screenshots/18.png, id=65, 736.7525pt x 176.66pt>
+File: /home/crow/Pictures/Screenshots/18.png Graphic file (type png)
+<use /home/crow/Pictures/Screenshots/18.png>
+Package pdftex.def Info: /home/crow/Pictures/Screenshots/18.png  used on input 
+line 292.
+(pdftex.def)             Requested size: 409.71692pt x 98.24153pt.
+</home/crow/Pictures/Screenshots/19.png, id=66, 736.7525pt x 125.46875pt>
+File: /home/crow/Pictures/Screenshots/19.png Graphic file (type png)
+<use /home/crow/Pictures/Screenshots/19.png>
+Package pdftex.def Info: /home/crow/Pictures/Screenshots/19.png  used on input 
+line 302.
+(pdftex.def)             Requested size: 409.71692pt x 69.7738pt.
+</home/crow/Pictures/Screenshots/20.png, id=67, 1121.18875pt x 494.84875pt>
+File: /home/crow/Pictures/Screenshots/20.png Graphic file (type png)
+<use /home/crow/Pictures/Screenshots/20.png>
+Package pdftex.def Info: /home/crow/Pictures/Screenshots/20.png  used on input 
+line 310.
+(pdftex.def)             Requested size: 409.71692pt x 180.83348pt.
+ [8 </home/crow/Pictures/Screenshots/17.png> </home/crow/Pictures/Screenshots/1
+8.png> </home/crow/Pictures/Screenshots/19.png>]
+</home/crow/Pictures/Screenshots/21.png, id=74, 746.79pt x 145.54375pt>
+File: /home/crow/Pictures/Screenshots/21.png Graphic file (type png)
+<use /home/crow/Pictures/Screenshots/21.png>
+Package pdftex.def Info: /home/crow/Pictures/Screenshots/21.png  used on input 
+line 316.
+(pdftex.def)             Requested size: 409.71692pt x 79.84943pt.
+</home/crow/Pictures/Screenshots/22.png, id=75, 908.39375pt x 218.8175pt>
+File: /home/crow/Pictures/Screenshots/22.png Graphic file (type png)
+<use /home/crow/Pictures/Screenshots/22.png>
+Package pdftex.def Info: /home/crow/Pictures/Screenshots/22.png  used on input 
+line 322.
+(pdftex.def)             Requested size: 409.71692pt x 98.694pt.
+ [9 </home/crow/Pictures/Screenshots/20.png> </home/crow/Pictures/Screenshots/2
+1.png> </home/crow/Pictures/Screenshots/22.png>] [10]
+(./fuckingrapport.aux) ) 
+Here is how much of TeX's memory you used:
+ 2118 strings out of 480247
+ 37603 string characters out of 5896150
+ 331541 words of memory out of 5000000
+ 20066 multiletter control sequences out of 15000+600000
+ 471374 words of font info for 35 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 55i,7n,62p,233b,311s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.
+pfb>
+Output written on fuckingrapport.pdf (11 pages, 393767 bytes).
+PDF statistics:
+ 100 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+

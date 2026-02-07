@@ -1,0 +1,345 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{geometry}
+\geometry{
+	left=2.5cm,
+	right=2.5cm,
+	top=2.5cm,
+	bottom=2.5cm,
+}
+
+\begin{document}
+	
+	% ------------------------------------------------------
+	%                  COVER PAGE
+	% ------------------------------------------------------
+	\begin{titlepage}
+		\begin{center}
+			
+			\vspace*{2cm}
+			
+			{\Huge \textbf{Université de Sciences et Téchnologies Houari Boumedien}}\\[1.0cm]
+			
+			{\Large Faculty d'Informatique}\\[0.2cm]
+			{\Large Master 1 RSD}\\[2.0cm]
+			
+			{\huge \textbf{TP Reseaux BGP}}\\[0.5cm]
+			{\Large TP Reseaux et Protocols}\\[2.5cm]
+			
+			\textbf{Prof:} Mme Bouachi Farida  \\[0.5cm]
+			\textbf{Etudiant:} Belmouloud Mustapha Abdellah \\[0.2cm]
+			\textbf{Matricule:} 212131092524 \\[0.2cm]
+			\textbf{Groupe:} 1 \\[2.5cm]
+			\vfill
+			
+			{\large \today}
+			
+		\end{center}
+	\end{titlepage}
+	
+	
+	% ------------------------------------------------------
+	%                  SECTION 1
+	% ------------------------------------------------------
+	\section{i hate this fucking subject, fucking whale of a teacher giving me assignmments during vacation FUCK YOU}
+	
+	\section{TP1}
+	\begin{enumerate}
+		\item
+		 	create tablespace belmouloud\_tbs datafile '/opt/oracle/oradata/XE/belmouloud\_tbs.dbf' SIZE 100M AUTOEXTEND ON;
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.9\textwidth]{/home/crow/Pictures/Screenshots/1.png}
+			\end{figure}
+			
+			create temporary tablespace belmouloud2\_temptbs tempfile '/opt/oracle/oradata/XE/\newline belmouloud2\_temptbs.dbf' SIZE 100M AUTOEXTEND ON;
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.9\textwidth]{/home/crow/Pictures/Screenshots/2.png}
+			\end{figure}
+		
+		\item 
+			create user tp1\_belmouloud identified by musmus3108 default tablespace belmouloud\_tbs temporary tablespace belmouloud2\_temptbs;
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.9\textwidth]{/home/crow/Pictures/Screenshots/3.png}
+			\end{figure}
+		
+		\item 
+			GRANT ALL privileges to tp1\_belmouloud;
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.9\textwidth]{/home/crow/Pictures/Screenshots/4.png}
+			\end{figure}
+		
+		\item 
+			les tableaux proposés: \newline
+			
+			user(id primary key, name) \newline
+			
+			sellers(id primary key, name) \newline
+			
+			products(id primary key, name, seller\_id foreign key, price(entre 20 et 100), category (tshirt, hoodie, jacket)) \newline
+			
+			orders(product\_id foreign key, user\_id foreign key, primarykey(product\_id, use\_id)) \newline
+			
+			order\_comments (id primary key, product\_id foreign key, user\_id foreign key,comments) \newline
+			
+			seller\_reviews (id primary\_key, seller\_id foeignkey,user\_id foreignkey,rating) 
+			
+		\item 
+			 CREATE TABLE users (
+			 id NUMBER,
+			 name VARCHAR2(50),
+			 CONSTRAINT pk\_users PRIMARY KEY (id)
+			 ); \newline
+			 
+			 CREATE TABLE sellers (
+			 id NUMBER,
+			 name VARCHAR2(50),
+			 CONSTRAINT pk\_sellers PRIMARY KEY (id)
+			 ); \newline
+			 
+			 CREATE TABLE products (
+			 id NUMBER,
+			 name VARCHAR2(20),
+			 seller\_id NUMBER,
+			 price NUMBER,
+			 category VARCHAR2(10),
+			 CONSTRAINT pk\_products PRIMARY KEY (id),
+			 CONSTRAINT chk\_price CHECK (price BETWEEN 20 AND 100),
+			 CONSTRAINT chk\_category CHECK (category IN ('tshirt', 'hoodie', 'jacket')),
+			 CONSTRAINT fk\_product\_seller FOREIGN KEY (seller\_id) REFERENCES sellers (id)
+			 ); \newline
+			 
+			 CREATE TABLE orders (
+			 product\_id NUMBER,
+			 user\_id    NUMBER,
+			 CONSTRAINT pk\_orders PRIMARY KEY (product\_id, user\_id),
+			 CONSTRAINT fk\_order\_product FOREIGN KEY (product\_id) REFERENCES products (id),
+			 CONSTRAINT fk\_order\_user FOREIGN KEY (user\_id) REFERENCES users (id)
+			 ); \newline
+			 
+			 CREATE TABLE order\_comments (
+			 id         NUMBER,
+			 product\_id NUMBER,
+			 user\_id    NUMBER,
+			 commenttxt    VARCHAR2(100),
+			 CONSTRAINT pk\_order\_comments PRIMARY KEY (id),
+			 CONSTRAINT fk\_comment\_order1 FOREIGN KEY (product\_id) REFERENCES products(id),
+			 CONSTRAINT fk\_comment\_order2 FOREIGN KEY (user\_id) REFERENCES users(id) 
+			 ); \newline
+			 
+			 CREATE TABLE seller\_reviews (
+			 id        NUMBER,
+			 seller\_id NUMBER,
+			 user\_id   NUMBER,
+			 rating    NUMBER,
+			 CONSTRAINT pk\_seller\_reviews PRIMARY KEY (id),
+			 CONSTRAINT chk\_rating CHECK (rating BETWEEN 1 AND 5),
+			 CONSTRAINT fk\_review\_seller FOREIGN KEY (seller\_id) REFERENCES sellers (id),
+			 CONSTRAINT fk\_review\_user FOREIGN KEY (user\_id) REFERENCES users (id)
+			 ); \newline
+			 \begin{figure}[H]
+			 	\centering
+			 	\includegraphics[width=0.9\textwidth]{/home/crow/Pictures/Screenshots/5.png}
+			 \end{figure}
+		 	 \begin{figure}[H]
+		 	 \centering
+		 	 \includegraphics[width=0.9\textwidth]{/home/crow/Pictures/Screenshots/6.png}
+		 	 \end{figure}
+	 		 \begin{figure}[H]
+	 		 \centering
+	 		 \includegraphics[width=0.9\textwidth]{/home/crow/Pictures/Screenshots/7.png}
+	 		 \end{figure}
+ 		 
+ 		 \item 
+ 		 	  alter table users add lastname varchar2(20);
+ 		 	  \begin{figure}[H]
+ 		 	  	\centering
+ 		 	  	\includegraphics[width=0.9\textwidth]{/home/crow/Pictures/Screenshots/8.png}
+ 		 	  \end{figure}
+ 	 	  \item 
+ 	 	  		alter table users modify name varchar2(50) not null; \newline
+ 	 	  		alter table sellers modify name varcha02r(50) not null;
+ 	 	  		\begin{figure}[H]
+ 	 	  			\centering
+ 	 	  			\includegraphics[width=0.9\textwidth]{/home/crow/Pictures/Screenshots/9.png}
+ 	 	  		\end{figure}
+  	  		\item 
+  	  			alter table users modify name varchar2(100);
+			 	\begin{figure}[H]
+			 		\centering
+			 		\includegraphics[width=0.9\textwidth]{/home/crow/Pictures/Screenshots/10.png}
+			 	\end{figure}
+		 	\item 
+		 		alter table users drop column lastname;
+		 		\begin{figure}[H]
+		 			\centering
+		 			\includegraphics[width=0.9\textwidth]{/home/crow/Pictures/Screenshots/11.png}
+		 		\end{figure}
+	 		\item 
+	 			alter table users rename column name to fullname;
+	 			\begin{figure}[H]
+	 				\centering
+	 				\includegraphics[width=0.9\textwidth]{/home/crow/Pictures/Screenshots/12.png}
+	 			\end{figure}
+ 			\item 
+ 				alter table orders add constraint fk\_order\_seller foreign key (seller\_id) references sellers(id);
+ 				\begin{figure}[H]
+ 					\centering
+ 					\includegraphics[width=0.9\textwidth]{/home/crow/Pictures/Screenshots/13.png}
+ 				\end{figure}
+ 			\item 
+ 				alter table products add constraint dlp check(discount < price);
+ 				\begin{figure}[H]
+ 					\centering
+ 					\includegraphics[width=0.9\textwidth]{/home/crow/Pictures/Screenshots/14.png}
+ 				\end{figure}
+			\item 
+				CREATE OR REPLACE TRIGGER potr
+				BEFORE INSERT OR UPDATE ON orders
+				FOR EACH ROW
+				DECLARE
+				vdiscount products.discount%TYPE;
+				BEGIN
+				SELECT discount
+				INTO vdiscount
+				FROM products
+				WHERE id = :NEW.product\_id;
+				IF :NEW.discounted != vdiscount THEN
+				RAISE\_APPLICATION\_ERROR(-20001, 'Order discount must match product discount');
+				END IF;
+				END;
+				/
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=0.9\textwidth]{/home/crow/Pictures/Screenshots/15.png}
+				\end{figure}
+			\item 
+				INSERT INTO users (id, fullname) VALUES (1, 'Alice Johnson'); \newline
+				INSERT INTO users (id, fullname) VALUES (2, 'Bob Smith'); \newline
+				INSERT INTO users (id, fullname) VALUES (3, 'Charlie Brown'); \newline
+				INSERT INTO users (id, fullname) VALUES (4, 'Diana Prince'); \newline
+				INSERT INTO users (id, fullname) VALUES (5, 'Ethan Hunt'); \newline
+				INSERT INTO users (id, fullname) VALUES (6, 'Fiona Apple'); \newline
+				INSERT INTO users (id, fullname) VALUES (7, 'George Martin'); \newline
+				
+				INSERT INTO sellers (id, name) VALUES (1, 'CoolTees'); \newline
+				INSERT INTO sellers (id, name) VALUES (2, 'HoodieHub'); \newline
+				INSERT INTO sellers (id, name) VALUES (3, 'JacketWorld'); \newline
+				INSERT INTO sellers (id, name) VALUES (4, 'UrbanWear'); \newline
+				INSERT INTO sellers (id, name) VALUES (5, 'FashionFiesta'); \newline
+				INSERT INTO sellers (id, name) VALUES (6, 'TrendSetters'); \newline
+				INSERT INTO sellers (id, name) VALUES (7, 'StreetStyle'); \newline
+				
+				INSERT INTO products (id, name, seller\_id, price, category, discount) VALUES (1, 'Classic Tee', 1, 25, 'tshirt', 5); \newline
+				INSERT INTO products (id, name, seller\_id, price, category, discount) VALUES (2, 'Premium Hoodie', 2, 60, 'hoodie', 10); \newline
+				INSERT INTO products (id, name, seller\_id, price, category, discount) VALUES (3, 'Leather Jacket', 3, 90, 'jacket', 15); \newline
+				INSERT INTO products (id, name, seller\_id, price, category, discount) VALUES (4, 'Graphic Tee', 1, 30, 'tshirt', 7); \newline
+				INSERT INTO products (id, name, seller\_id, price, category, discount) VALUES (5, 'Zip Hoodie', 2, 55, 'hoodie', 12); \newline
+				INSERT INTO products (id, name, seller\_id, price, category, discount) VALUES (6, 'Winter Jacket', 3, 95, 'jacket', 20); \newline
+				INSERT INTO products (id, name, seller\_id, price, category, discount) VALUES (7, 'Summer Tee', 1, 22, 'tshirt', 0); \newline
+				
+				INSERT INTO orders (product\_id, user\_id, seller\_id, discounted) VALUES (1, 1, 1, 5); \newline
+				INSERT INTO orders (product\_id, user\_id, seller\_id, discounted) VALUES (2, 2, 2, 10); \newline
+				INSERT INTO orders (product\_id, user\_id, seller\_id, discounted) VALUES (3, 3, 3, 15); \newline
+				INSERT INTO orders (product\_id, user\_id, seller\_id, discounted) VALUES (4, 4, 1, 7); \newline
+				INSERT INTO orders (product\_id, user\_id, seller\_id, discounted) VALUES (5, 5, 2, 12); \newline
+				INSERT INTO orders (product\_id, user\_id, seller\_id, discounted) VALUES (6, 6, 3, 20); \newline
+				INSERT INTO orders (product\_id, user\_id, seller\_id, discounted) VALUES (7, 7, 1, 0); \newline
+				
+				INSERT INTO order\_comments (id, product\_id, user\_id, commenttxt) VALUES (1, 1, 1, 'Great quality!'); \newline
+				INSERT INTO order\_comments (id, product\_id, user\_id, commenttxt) VALUES (2, 2, 2, 'Very cozy hoodie.'); \newline
+				INSERT INTO order\_comments (id, product\_id, user\_id, commenttxt) VALUES (3, 3, 3, 'Love the jacket!'); \newline
+				INSERT INTO order\_comments (id, product\_id, user\_id, commenttxt) VALUES (4, 4, 4, 'Nice graphic design.'); \newline
+				INSERT INTO order\_comments (id, product\_id, user\_id, commenttxt) VALUES (5, 5, 5, 'Good value for price.'); \newline
+				INSERT INTO order\_comments (id, product\_id, user\_id, commenttxt) VALUES (6, 6, 6, 'Perfect for winter.'); \newline
+				INSERT INTO order\_comments (id, product\_id, user\_id, commenttxt) VALUES (7, 7, 7, 'Light and comfortable.'); \newline
+				
+				INSERT INTO seller\_reviews (id, seller\_id, user\_id, rating) VALUES (1, 1, 1, 5); \newline
+				INSERT INTO seller\_reviews (id, seller\_id, user\_id, rating) VALUES (2, 2, 2, 4); \newline
+				INSERT INTO seller\_reviews (id, seller\_id, user\_id, rating) VALUES (3, 3, 3, 5); \newline
+				INSERT INTO seller\_reviews (id, seller\_id, user\_id, rating) VALUES (4, 1, 4, 3); \newline
+				INSERT INTO seller\_reviews (id, seller\_id, user\_id, rating) VALUES (5, 2, 5, 4); \newline
+				INSERT INTO seller\_reviews (id, seller\_id, user\_id, rating) VALUES (6, 3, 6, 5); \newline
+				INSERT INTO seller\_reviews (id, seller\_id, user\_id, rating) VALUES (7, 1, 7, 4); \newline
+				
+				la requete "insert into orders (product\_id, user\_id, seller\_id, discounted) values (1, 2, 1, 999);" vas echouer a cause de trigger deja declaré qui necessite que discount = discounted
+				 
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=0.9\textwidth]{/home/crow/Pictures/Screenshots/16.png}
+				\end{figure}
+			
+				la requete "INSERT INTO products (id, name, seller\_id, price, category, discount) VALUES (8, 'Expensive Tee', 1, 150, 'tshirt', 10);
+				" vas echouer a cause constarint check qui necessite price>discount 
+				
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=0.9\textwidth]{/home/crow/Pictures/Screenshots/17.png}
+				\end{figure}
+			
+				INSERT INTO products (id, name, seller\_id, price, category, discount)
+				VALUES (9, 'Fancy Pants', 2, 50, 'pants', 5);
+				vas echouer car la category doit etre tshirt hoodie ou jacket
+				
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=0.9\textwidth]{/home/crow/Pictures/Screenshots/18.png}
+				\end{figure}
+			
+			\item 
+				alter table products disable constraint chk\_price;
+			\item 
+				delete from products where id=1; \newline
+				contrainte d'integrité car on a pas specifié de qui fair on delete.
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=0.9\textwidth]{/home/crow/Pictures/Screenshots/19.png}
+				\end{figure}
+			\item 
+				assuré
+			\item 
+				select * from products, orders, users where orders.product\_id = products.id and orders.user\_id = users.id and products.discount >10;
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=0.9\textwidth]{/home/crow/Pictures/Screenshots/20.png}
+				\end{figure}
+			\item 
+				select seller\_id , avg(discounted) as average\_discount from orders group by seller\_id;
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=0.9\textwidth]{/home/crow/Pictures/Screenshots/21.png}
+				\end{figure}
+			\item 
+				create view qst20 as select seller\_id , avg(discounted) as average\_discount from orders group by seller\_id;
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=0.9\textwidth]{/home/crow/Pictures/Screenshots/22.png}
+				\end{figure}
+		
+	\end{enumerate}
+	
+	
+	
+
+	
+	
+	\newpage
+	
+	\section{Resultas}
+	
+	Example avec shiw ip route
+	
+	\begin{figure}[H]
+		\centering
+	%	\includegraphics[width=0.9\textwidth]{1.png} % replace with your file
+		\caption{Example Routeur OSPF}
+		\label{fig:Router ospf}
+	\end{figure}
+
+\end{document}

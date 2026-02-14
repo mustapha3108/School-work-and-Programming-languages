@@ -26,7 +26,7 @@ type Grid [3][3]int
 func add(x int, y int) string{
 	//var works inside funcs and main func
 	var z int = 20
-	return string(x+y+z)
+	return strconv.Itoa(x+y+z)
 }
 func swap(x, y int) (int, int){
 	return y,x

@@ -10,6 +10,7 @@ func main() {
 	mylib.Exo2()
 	mylib.Exo3()
 	mylib.Exo4()
+	mylib.Exo5()
 
 
 	fmt.Println("end of tp")
